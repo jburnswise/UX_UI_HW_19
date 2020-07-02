@@ -1,0 +1,71 @@
+/*
+*{
+    outline: 1px solid blue;
+}
+*/
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+}
+.skills1, .skills2, .skills3 {
+    background-color: rgba(255,0,0,0.2);
+    width: 33%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.skills1 {
+    background-image: url("images/Placeholder/Images/With_Text.png");
+    background-size: cover;
+    background-color: royalblue;
+
+}
+
+/* My Work */
+
+.workGrid{
+    display: grid;
+    
+}
+.item1 {
+    grid-area: item1;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: ;
+    grid-template-columns: ;
+    grid-template-areas: 
+    'item1 item1 item1 item1 item1';
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 600px){
+.flexContainer{
+    display: flex;
+    flex-direction: column;
+}
+.skills1, .skills2, .skills3 {
+    background-color: rgba(255,0,0,0.2);
+    width: 83%;
+    padding: 20px;
+    margin-left: 10px;
+}
+.skills2{
+    background-color: seagreen;
+}
+.grid-container{
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+    'item1'
+    'item2'
+    'item3';
+}
+}
+
+
+
