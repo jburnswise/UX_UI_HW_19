@@ -438,11 +438,20 @@ footer li {
     padding-left: 50px;
     font-size: 0.8rem;
     color: rgb(126, 126, 126);
-
     text-align: left;
     padding-top: 5px;
     padding-bottom: 30px;
     margin-bottom: 0em;
+}
+.footyText {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 0px;
+    font-size: 0.8rem;
+    color: rgb(126, 126, 126);
+    text-align: left;
 }
 
 .ss-icon {
@@ -792,7 +801,13 @@ grid-template-areas:
   border-bottom: 1px solid black;
 }
 
+.footHead1 {
+    /*display: flex;*/
+    padding-left: 50px;
+    padding-right: 50px;
+    color: red;
 
+}
 
 
 .inline-block {
@@ -859,7 +874,7 @@ grid-template-areas:
         grid-gap: 10px;
         grid-template-columns: repeat(4, [col] 100px ) ;
         grid-template-rows: repeat(3, [row] auto  );
-        outline: 1px solid rgb(76, 0, 255);
+        /*outline: 1px solid rgb(76, 0, 255);*/
         
         /*background-color: #fff;
         color: #444;*/
@@ -871,7 +886,7 @@ grid-template-areas:
         border-radius: 5px;
         padding: 20px;
         font-size: 150%;
-        outline: 1px solid red;
+        /*outline: 1px solid red;*/
         
         /*z-index:10;*/
 
@@ -917,7 +932,7 @@ grid-template-areas:
         grid-row: row / span 3 ;
         /*background-color: rgba(49,121,207, 0.5);*/
         transform: translateZ(0px);
-        outline: 1px solid red;
+        /*outline: 1px solid red;*/
     }
     
     .bz {
@@ -925,21 +940,21 @@ grid-template-areas:
         grid-row: row / span 3 ;
         /*background-color: rgba(49,121,207, 0.5);*/
         transform: translateZ(10px);
-        outline: 1px solid red;
+        /*outline: 1px solid red;*/
     }
     .cz {
         grid-column: col / span 3;
         grid-row: row / span 3 ;
         /*background-color: rgba(49,121,207, 0.5);*/
         transform: translateZ(20px);
-        outline: 1px solid red;
+        /*outline: 1px solid red;*/
     }
     .dz {
         grid-column: col  / span  3 ;
         grid-row: row / span 3 ;
         /*background-color: rgba(49,121,207, 0.5);*/
         transform: translateZ(40px);
-        outline: 1px solid red;
+        /*outline: 1px solid red;*/
     }
 
     .ez {
@@ -947,7 +962,7 @@ grid-template-areas:
         grid-row: row / span 3 ;
         /*background-color: rgba(49,121,207, 0.5);*/
         transform: translateZ(45px);
-        outline: 1px solid red;
+        /*outline: 1px solid red;*/
     }
 
     .fz {
@@ -955,7 +970,7 @@ grid-template-areas:
         grid-row: row / span 3  ;
         /*background-color: rgba(49,121,207, 0.5);*/
         transform: translateZ(50px);
-        outline: 1px solid red;
+        /*outline: 1px solid red;*/
         place-self: center;
         /*z-index: 20;*/
     }
@@ -1041,8 +1056,8 @@ grid-template-areas:
     padding: 20px;
     margin-left: 10px;
 }
-.skills2{
-    background-color: seagreen;
+.skills2 {
+    /*background-color: seagreen;*/
 }
 .grid-container{
     margin: 0px 5%;
@@ -1054,4 +1069,293 @@ grid-template-areas:
     'item2'
     'item3';
 }
+
+  /*panel 1*/
+  .p1-headpad {
+    grid-area: headpad;
+    height: 50px;
+    /*background-color: slategray;*/
+}
+.p1-item-a {
+  grid-area: header;
+  /*background-color: orange;*/
+  font-size:56px;
+  
+  /*font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  justify-content: left;
+  /*padding-left: 50px;*/
+  /*padding-top: ;*/
+  /*height: 100px;*/
+}
+.p1-item-b {
+  grid-area: main;
+  /*background-color: blue;*/
+  /*justify-self: center;*/
+  width: 100%;
+  max-width: 20rem;
+  transform-style: preserve-3d
+  
+
+  /*
+  z-index: 10;
+  */
+}
+.p1-item-b img{
+  width: 100%;
+}
+.p1-item-c {
+  grid-area: sidebar;
+  /*background-color: pink;*/
+  font-size:33px;
+  font-family: 'Oswald', sans-serif;
+  /*
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: left;
+  */
+}
+.p1-item-c button {
+    display: none;
+}
+
+.p1-item-d {
+  grid-area: footer;
+  /*background-color: green;*/
+}
+.p1-item-e {
+  grid-area: bonus;
+  /*background-color: red;*/
+  padding: 20px;
+}
+.p1-item-f {
+  grid-area: footer2;
+  /*background-color: green;*/
+}
+.p1-footpad {
+  grid-area: footpad;
+  height: 50px;
+  /*background-color: slategray;*/
+}
+.p1-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  column-gap: 10px;
+  grid-template-areas: 
+    "headpad"
+    "header"
+    "main"
+    "sidebar"
+    "footpad";
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+/*panel 2*/
+.p2-headpad {
+    grid-area: headpad_2;
+    height: 50px;
+    /*background-color: slategray;*/
+}
+.p2-descript-a {
+    grid-area: descript_2;
+    /*background-color: rgb(0, 206, 69);*/
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*width: 800px;*/
+    justify-content: left;
+    /*padding-left: 50px;
+    padding-top: ;*/
+  }
+.p2-item-a {
+  grid-area: header_2;
+  /*background-color: orange;
+  
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  justify-content: left;
+  /*padding-left: 50px;*/
+  /*padding-top: ;*/
+  /*height: 100px;*/
+}
+.p2-item-b {
+  grid-area: main_2;
+  /*background-color: blue;*/
+  justify-self: center;
+  /*object-fit: contain;*/
+  z-index: 10;
+}
+.p2-item-b img{
+    width: 100%;
+    max-width: 50rem;
+}
+ 
+/*background-color: pink;*/
+  /*font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  justify-content: left;*/
+
+
+.p2-item-c {
+  grid-area: sidebar_2;
+  border-top: 1px solid black;
+  padding-bottom: 50px;
+}
+.p2-item-c button {
+    display: none;
+}
+.p2-item-c br {
+    display: none;
+}
+
+.p2-item-d {
+  grid-area: footer_2;
+  /*background-color: green;*/
+}
+.p2-item-e {
+  grid-area: bonus_2;
+  /*background-color: red;*/
+  padding: 20px;
+}
+.p2-item-f {
+  grid-area: footer_2;
+  /*background-color: green;*/
+}
+.p2-footpad {
+  grid-area: footpad_2;
+  height: 50px;
+  /*background-color: slategray;*/
+}
+.p2-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  column-gap: 10px;
+  grid-template-areas: 
+    "headpad_2"
+    "header_2"
+    "sidebar_2"
+    "main_2"
+    "footpad_2";
+    background-color: #F5F5F5;
+    border-top: 1px solid black;
+}
+
+
+
+
+
+
+
+ /*panel 3*/
+    
+ .p3-headpad {
+    grid-area: headpad_3;
+    height: 50px;
+}
+.p3-descript-a {
+    grid-area: descript_3;
+    /*background-color: rgb(0, 206, 69);*/
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    /*width: 800px;*/
+    justify-content: left;
+    /*padding-left: 50px;
+    padding-top: ;*/
+  }
+.p3-item-a {
+  grid-area: header_3;
+  /*background-color: orange;*/
+  color: white;
+ /* 
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  justify-content: left;
+  /*padding-left: 50px;*/
+  /*padding-top: ;*/
+  /*height: 100px;*/
+}
+.p3-item-b {
+  grid-area: main_3;
+  /*background-color: blue;*/
+  justify-self: center;
+  z-index: 10;
+}
+.p3-item-b img{
+  width: 100%;
+  max-width: 50rem;
+}
+
+.p3-item-c {
+  /*border: 1px solid rgb(255, 0, 0);*/
+  color: white !important;
+  grid-area: sidebar_3;
+  /*background-color: pink;*/
+  /*font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  justify-content: left;*/
+  border-top: 1px solid rgb(255, 255, 255);
+  padding-bottom: 50px;
+}
+
+.p3-item-c .button2{
+    display: none;
+
+}
+
+
+.p3-item-d {
+  grid-area: footer_3;
+  /*background-color: green;*/
+}
+.p3-item-e {
+  grid-area: bonus_3;
+  /*background-color: red;*/
+  padding: 20px;
+}
+.p3-item-f {
+  grid-area: footer_3;
+  /*background-color: green;*/
+}
+.p3-footpad {
+  grid-area: footpad_3;
+  height: 50px;
+  /*background-color: slategray;*/
+}
+.p3-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  column-gap: 10px;
+  grid-template-areas: 
+    "headpad_3"
+    "header_3"
+    "sidebar_3"
+    "main_3"
+    "footpad_3";
+    background-color: #2E2E2E;
+    border-top: 1px solid black;
+}
+
+
+
+
+
+
+
 }
