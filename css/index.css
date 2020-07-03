@@ -549,7 +549,19 @@ footer li {
       "bonus bonus bonus main main main"
       "footpad footpad footpad footpad footpad footpad";
       background-color: rgb(255, 255, 255);
+
+      /*background: url(../images/sprinklebg\ 2.png) repeat 0 0;
+      -webkit-animation: slide 15s linear infinite;
+      /*opacity: 50%;*/
+      /*width: 100%;
+      margin: 0;
+      text-align: center;
+      height: 300px;
+      padding-top: 120px;
+      box-sizing: border-box;*/
   }
+
+  
 
     /*panel 2*/
     .p2-headpad {
@@ -1006,11 +1018,19 @@ grid-template-areas:
     margin-top: 0;
     padding-top: 3em;
     padding-bottom: 3em;
+    background: #F5F5F5 url(../images/sprinklebg\ 2.png) repeat 0 0;
+    -webkit-animation: slide 15s linear infinite;
 }
 
 .flexContainer{
     display: flex;
     flex-direction: row;
+    
+}
+
+@-webkit-keyframes slide {
+  from { background-position: 0 0; }
+  to { background-position: 0 400px; }
 }
 .skills1, .skills2, .skills3 {
     background-color: white;
