@@ -1018,8 +1018,11 @@ grid-template-areas:
     margin-top: 0;
     padding-top: 3em;
     padding-bottom: 3em;
-    background: #F5F5F5 url(../images/sprinklebg\ 2.png) repeat 0 0;
-    -webkit-animation: slide 15s linear infinite;
+    
+}
+.anim {
+  background: #F5F5F5 url(../images/sprinklebg\ 2.png) repeat 0 0;
+  -webkit-animation: slide 15s linear infinite;
 }
 
 .flexContainer{
