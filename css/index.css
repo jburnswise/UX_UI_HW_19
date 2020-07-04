@@ -474,7 +474,7 @@ footer li {
   .p1-item-a {
     grid-area: header;
     /*background-color: orange;*/
-    font-size:56px;
+    font-size: 4rem;
     
     /*font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
@@ -484,6 +484,11 @@ footer li {
     /*padding-top: ;*/
     /*height: 100px;*/
   }
+  .p1-item-a p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
   .p1-item-b {
     grid-area: main;
     /*background-color: blue;*/
@@ -544,7 +549,19 @@ footer li {
       "bonus bonus bonus main main main"
       "footpad footpad footpad footpad footpad footpad";
       background-color: rgb(255, 255, 255);
+
+      /*background: url(../images/sprinklebg\ 2.png) repeat 0 0;
+      -webkit-animation: slide 15s linear infinite;
+      /*opacity: 50%;*/
+      /*width: 100%;
+      margin: 0;
+      text-align: center;
+      height: 300px;
+      padding-top: 120px;
+      box-sizing: border-box;*/
   }
+
+  
 
     /*panel 2*/
     .p2-headpad {
@@ -1094,6 +1111,11 @@ grid-template-areas:
     margin-top: 0;
     padding-top: 3em;
     padding-bottom: 3em;
+    
+}
+.anim {
+  background: #F5F5F5 url(../images/sprinklebg\ 2.png) repeat 0 0;
+  -webkit-animation: slide 15s linear infinite;
 }
 /*
 .mySkills h1 {
@@ -1104,6 +1126,12 @@ grid-template-areas:
 .flexContainer{
     display: flex;
     flex-direction: row;
+    
+}
+
+@-webkit-keyframes slide {
+  from { background-position: 0 0; }
+  to { background-position: 0 400px; }
 }
 .skills1Title, .skills2Title, .skills3Title {
   background-color: white;
