@@ -1159,7 +1159,9 @@ grid-template-areas:
 
 }
 .matrixTitle {
- 
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 .staticMatrix{
   display: flex;
