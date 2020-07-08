@@ -56,27 +56,32 @@ p {
 .nav ul {
     display: none;
     list-style: none;
+    z-index: 1001;
   }
   .nav.active ul {
     color: rgb(255, 255, 255);
     display: block;
     /*transition: all 2000ms;*/
     mix-blend-mode: screen;
+    z-index: 1001;
   }
   a {
     text-decoration: none;
     color: white;
+    z-index: 1001;
   }
   a:hover {
-    text-decoration: line-through;
+    text-decoration: underline;
     color: rgb(255, 0, 234);
+    z-index: 1001;
   }
   
+
   .nav-tgl {
     display: inline-block;
     cursor: pointer;
     position: fixed;
-    z-index: 500;
+    z-index: 1001;
     right: 30px;
     top: 10px;
     width: 60px;
@@ -86,7 +91,7 @@ p {
     padding: 0;
     background: #fff;
     box-shadow: none;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     /*box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);*/
     line-height: 0.6;
     text-align: center;
@@ -154,12 +159,13 @@ p {
     transition: all 500ms ease-in-out;
     clip-path: circle(30px at calc(100% - 60px) 45px);
     visibility: hidden;
-    z-index: ;
+    z-index: 0;
   }
   
   .active.nav:before {
     visibility: visible;
     clip-path: circle(100%);
+    z-index: 0;
   }
   
 
@@ -180,6 +186,9 @@ p {
 }
 .logoBurger {
   padding-left: 30px;
+}
+.logoBurger a {
+  text-decoration: none;
 }
 .jwmenu {
   list-style: none;
@@ -982,7 +991,7 @@ grid-template-areas:
 .wrapper {
         display: grid;
         grid-gap: 10px;
-        grid-template-columns: repeat(4, [col] 100px ) ;
+        grid-template-columns: repeat(3, [col] 100px ) ;
         grid-template-rows: repeat(3, [row] auto  );
         /*outline: 1px solid rgb(76, 0, 255);*/
         
